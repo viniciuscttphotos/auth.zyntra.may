@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificado de Autenticidade | Zyntra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* CONTAINER */
+
+.wrapper {
+  width: 100%;
+  max-width: 680px;
+}
+
+.certificate {
+  background: #ffffff;
+  padding: 60px 40px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  position: relative;
+}
+
+/* LINHAS */
+
+.certificate::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* HEADER */
+
+.brand {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+/* TEXTO */
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* INFO */
+
+.info {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+/* SELO */
+
+.seal {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 12px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.seal strong {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* LOGO FINAL (AGORA GRANDE) */
+
+.logo {
+  margin-top: 60px;
+}
+
+.logo img {
+  max-width: 560px; /* TAMANHO GRANDE */
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* FOOTER */
+
+.footer {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: #777;
+  margin-top: 25px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 480px) {
+
+  .certificate {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .seal {
+    padding: 10px 16px;
+  }
+
+  .logo img {
+    max-width: 260px; /* AJUSTADO PRO MOBILE */
+  }
+
+}
+
+/* PRINT */
+
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .certificate {
+    border: none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="certificate">
+
+    <div class="brand">ZYNTRA – ADVANCED PEPTIDE THERAPY</div>
+
+    <div class="title">Certificado de Autenticidade</div>
+    <div class="subtitle">QUALITY ASSURANCE DOCUMENT</div>
+
+    <div class="text">
+      Este documento certifica que o produto associado a este código integra a linha de peptídeos distribuídos pela Zyntra.
+      <br><br>
+      A Zyntra atesta a procedência do item, bem como sua inclusão em um processo interno de seleção, conferência e controle de qualidade, adotado para garantir consistência, rastreabilidade e padrão elevado de fornecimento.
+    </div>
+
+    <div class="info">
+      Categoria: Peptídeos<br>
+      Origem: Zyntra<br>
+      Lote: Maio de 2026<br>
+      Verificação realizada via QR Code
+    </div>
+
+    <div class="seal">
+      CERTIFICAÇÃO
+      <strong>PROCEDÊNCIA VERIFICADA</strong>
+    </div>
+
+    <div style="margin-top:10px; font-size:11px; letter-spacing:1px;">
+      DOCUMENTO DE AUTENTICAÇÃO E PROCEDÊNCIA
+    </div>
+
+    <div class="logo">
+      <img src="./assets/zyntralogo1.png" alt="Zyntra Logo">
+    </div>
+
+    <div class="footer">
+      A Zyntra atua com rigor na seleção e fornecimento de seus produtos, assegurando padrões consistentes de procedência e autenticidade.
+      <br><br>
+      Este certificado acompanha o item como confirmação documental de sua origem dentro da cadeia de distribuição da marca.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
